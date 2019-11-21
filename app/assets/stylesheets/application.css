@@ -1,14 +1,11 @@
-// Graphical variables
+
 @import "config/fonts";
 @import "config/colors";
 @import "config/bootstrap_variables";
-
-// External libraries
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-
-// Your CSS partials
+@import "cards";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 
 html {
@@ -38,7 +35,7 @@ html {
 }
 
 #skills {
-  border-left: dashed 1px #454545;
+  border-left: dashed 1px #ffffff;
   padding: 20px;
 }
 
@@ -52,24 +49,34 @@ a {
   color: #b1b1b1 !important;
 }
 
-/* Your card CSS file */
-.card-category {
-  color: white;
-  display: flex;
-  justify-content: center;
-  height: 180px;
-  background-size: cover;
-  align-items: center;
-  font-size: 40px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px #999;
-  border-radius: 8px;
-  box-shadow: 0 0 15px #ccc;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.footer {
   font-family: "Roboto", "sans-serif";
   font-weight: normal;
   letter-spacing: 3px;
+  font-size: 18px;
+  padding: 15px;
+  text-align: center !important;
 }
+
+a:hover.test {
+  text-decoration: none !important;
+  color: #6f6f6f !important;
+}
+
+a.test {
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+
+@-webkit-keyframes blackblur {
+  from { text-shadow: 0 0 72px black; color: transparent; }
+  to   { text-shadow: 0;              color: black;       }
+}
+
+.smokemonster span:nth-of-type(1)  { -webkit-animation: blackblur 7s 0.5s  1 alternate; }
+.smokemonster span:nth-of-type(2)  { -webkit-animation: blackblur 7s 1s  1 alternate; }
+.smokemonster span:nth-of-type(3)  { -webkit-animation: blackblur 7s 1.5s 1 alternate; }
+
+
 
 
