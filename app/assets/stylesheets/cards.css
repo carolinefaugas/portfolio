@@ -25,6 +25,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: top;
+  margin-top: 20px;
 }
 
 .card-product img {
@@ -51,29 +52,17 @@
   padding: 16px;
 }
 
-
-
 /* Colorize-zoom Container */
 .img-hover-zoom--colorize img {
   transition: transform .5s, filter 1.5s ease-in-out;
   filter: grayscale(100%);
-  transition: transform 0.25s ease;
-  cursor: zoom-in;
 }
 
 /* The Transformation */
 .img-hover-zoom--colorize:hover img {
   filter: grayscale(0);
-  transform: scale(1.1);
 }
 
-
-input[type=checkbox] {
-  display: none;
-}
-
-
-input[type=checkbox]:checked ~ label > img {
-  transform: scale(2);
-  cursor: zoom-out;
+.modal-body {
+  text-align: center !important;
 }

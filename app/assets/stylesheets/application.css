@@ -56,6 +56,7 @@ a {
   font-size: 18px;
   padding: 15px;
   text-align: center !important;
+  margin-top: 20px;
 }
 
 a:hover.test {
@@ -68,15 +69,16 @@ a.test {
   color: #ffffff !important;
 }
 
-@-webkit-keyframes blackblur {
-  from { text-shadow: 0 0 72px black; color: transparent; }
-  to   { text-shadow: 0;              color: black;       }
+.webprint {
+  letter-spacing: 10px;
+  padding: 30px 30px 0 30px;
+  text-align: center;
+  font-weight: lighter;
 }
 
-.smokemonster span:nth-of-type(1)  { -webkit-animation: blackblur 7s 0.5s  1 alternate; }
-.smokemonster span:nth-of-type(2)  { -webkit-animation: blackblur 7s 1s  1 alternate; }
-.smokemonster span:nth-of-type(3)  { -webkit-animation: blackblur 7s 1.5s 1 alternate; }
-
+#separation {
+  border-right: dashed 1px pink;
+}
 
 
 
